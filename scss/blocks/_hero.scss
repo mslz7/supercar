@@ -1,0 +1,430 @@
+.hero {
+  padding-top: 150px;
+  padding-bottom: 145px;
+  background-color: $dark__cyan;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 830px;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../images/car.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__container {
+    @include df-column-center-start;
+  }
+  &__left-box {
+    @include df-column-center-start;
+  }
+  &__title {
+    position: relative;
+    width: 687px;
+    text-align: start;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: $light__yellow;
+    z-index: 2;
+    margin-bottom: 40px;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      top: -30px;
+      left: -40px;
+      transform: rotate(-35deg);
+      background-image: url("../../images/fire.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__text {
+    width: 474px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: start;
+    color: $light__gray;
+    margin-bottom: 20px;
+  }
+  &__cash-box {
+    @include df-column-center-start;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
+  &__cash-title {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $dark__gray;
+  }
+  &__cash-money-text {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $white;
+  }
+  &__button {
+    @include df-row-center-center;
+    gap: 16px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid $light__yellow;
+    background-color: $second__dark__cyan;
+    color: $light__yellow;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+  &__button-icon {
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 145px;
+    background-color: $dark__cyan;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 640px;
+      height: 370px;
+      bottom: 0;
+      right: 0;
+      background-image: url("../../images/car.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__container {
+      @include df-column-center-start;
+    }
+
+    &__left-box {
+      @include df-column-center-start;
+    }
+
+    &__title {
+      position: relative;
+      width: 687px;
+      text-align: start;
+      font-family: "Montserrat";
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 48px;
+      letter-spacing: 0%;
+      color: $light__yellow;
+      z-index: 2;
+      margin-bottom: 40px;
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        top: -30px;
+        left: -40px;
+        transform: rotate(-35deg);
+        background-image: url("../../images/fire.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__text {
+      width: 474px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: start;
+      color: $light__gray;
+      margin-bottom: 20px;
+    }
+
+    &__cash-box {
+      @include df-column-center-start;
+      gap: 5px;
+      margin-bottom: 40px;
+    }
+
+    &__cash-title {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $dark__gray;
+    }
+
+    &__cash-money-text {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $white;
+    }
+
+    &__button {
+      @include df-row-center-center;
+      gap: 16px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: 1px solid $light__yellow;
+      background-color: $second__dark__cyan;
+      color: $light__yellow;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0%;
+    }
+
+    &__button-icon {
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 145px;
+    background-color: $dark__cyan;
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      width: 830px;
+      height: 500px;
+      bottom: 0;
+      right: 0;
+      background-image: url("../../images/car.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__container {
+      padding-right: 40px;
+      padding-left: 40px;
+      @include df-column-center-center;
+    }
+
+    &__left-box {
+      @include df-column-center-center;
+    }
+
+    &__title {
+      position: relative;
+      width: 687px;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 48px;
+      letter-spacing: 0%;
+      color: $light__yellow;
+      z-index: 2;
+      margin-bottom: 40px;
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        top: -30px;
+        left: -40px;
+        transform: rotate(-35deg);
+        background-image: url("../../images/fire.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__text {
+      width: 474px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $light__gray;
+      margin-bottom: 47px;
+    }
+
+    &__cash-box {
+      @include df-column-center-center;
+      gap: 5px;
+      margin-bottom: 48px;
+    }
+
+    &__cash-title {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $dark__gray;
+    }
+
+    &__cash-money-text {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $white;
+    }
+
+    &__button {
+      @include df-row-center-center;
+      gap: 16px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: 1px solid $light__yellow;
+      background-color: $second__dark__cyan;
+      color: $light__yellow;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0%;
+    }
+
+    &__button-icon {
+    }
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 92px;
+    background-color: $dark__cyan;
+    &__container {
+      padding-right: 24px;
+      padding-left: 24px;
+      @include df-column-center-center;
+    }
+
+    &__left-box {
+      @include df-column-center-center;
+    }
+
+    &__title {
+      position: relative;
+      width: 229px;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0%;
+      color: $light__yellow;
+      margin-bottom: 34px;
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 69px;
+        height: 69px;
+        top: -15px;
+        left: 8px;
+        transform: rotate(-35deg);
+        background-image: url("../../images/fire.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $light__gray;
+      margin-bottom: 47px;
+    }
+
+    &__cash-box {
+      @include df-column-center-center;
+      gap: 5px;
+      margin-bottom: 48px;
+    }
+
+    &__cash-title {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $dark__gray;
+    }
+
+    &__cash-money-text {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $white;
+    }
+
+    &__button {
+      @include df-row-center-center;
+      gap: 16px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: 1px solid $light__yellow;
+      background-color: $second__dark__cyan;
+      color: $light__yellow;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0%;
+    }
+
+    &__button-icon {
+    }
+  }
+}

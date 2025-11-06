@@ -1,0 +1,219 @@
+.classic {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $light__yellow;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 69px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      right: 0;
+      bottom: 0px;
+      width: 350px;
+      height: 160px;
+      background-image: url("../../images/gray__car.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &__box {
+    @include df-column-center-start;
+  }
+  &__second-box {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    @include df-column-center-start;
+  }
+  &__titles {
+    font-family: "Racing Sans One";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $black;
+  }
+  &__second-titles {
+    font-family: "Racing Sans One";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $black;
+  }
+  &__texts {
+    margin-top: 20px;
+    width: 340px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $dark__cyan;
+    text-align: start;
+  }
+  &__second-texts {
+    margin-top: 20px;
+    width: 340px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $dark__cyan;
+    text-align: start;
+  }
+}
+@media (max-width: 1024px) {
+  .classic {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background-color: $light__yellow;
+    position: relative;
+    &__container {
+      padding-right: 40px;
+      padding-left: 40px;
+      gap: 0px;
+      @include df-column-center-center;
+      &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        bottom: -250px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 543px;
+        height: 260px;
+        background-image: url("../../images/gray__car.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &__box {
+      @include df-column-center-center;
+      gap: 28px;
+    }
+    &__second-box {
+      margin-top: 40px;
+      margin-bottom: 68px;
+      @include df-column-center-center;
+      gap: 28px;
+    }
+    &__titles {
+      font-family: "Racing Sans One";
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $black;
+    }
+    &__second-titles {
+      font-family: "Racing Sans One";
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $black;
+    }
+    &__texts {
+      margin-top: 0px;
+      width: 474px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $dark__cyan;
+      text-align: center;
+    }
+    &__second-texts {
+      margin-top: 0px;
+      width: 474px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $dark__cyan;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .classic {
+    padding-top: 32px;
+    padding-bottom: 100px;
+    background-color: $light__yellow;
+    &__container {
+      position: relative;
+      padding-right: 24px;
+      padding-left: 24px;
+      @include df-column-center-center;
+      &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        bottom: -150px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 330px;
+        height: 158px;
+        background-image: url("../../images/gray__car.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    &__box {
+      @include df-column-center-center;
+    }
+    &__second-box {
+      margin-top: 40px;
+      margin-bottom: 68px;
+      @include df-column-center-center;
+    }
+    &__titles {
+      font-family: "Racing Sans One";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $black;
+    }
+    &__second-titles {
+      font-family: "Racing Sans One";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: $black;
+    }
+    &__texts {
+      width: 100%;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $dark__cyan;
+      text-align: center;
+    }
+    &__second-texts {
+      width: 100%;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $dark__cyan;
+      text-align: center;
+    }
+  }
+}
